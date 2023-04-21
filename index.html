@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(19) HTML&CSS. Forms</title>
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- https://ihateregex.io/ - сайт для создания шаблонов (pattern) -->
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Name</legend>
+                <label><span>User name</span>
+                    <input autofocus 
+                        type="text" 
+                        placeholder="First name"
+                        name="firstName"
+                        required
+                        pattern="^[A-Z][a-z0-9]{2,15}$">
+                </label>
+                <label><span>Last name</span>
+                    <input type="text" 
+                        placeholder="Last name"
+                        name="lastName"
+                        disabled>
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend>Personal data</legend>
+                <label><span>Email</span>
+                    <input type="email" 
+                        placeholder="Email"
+                        name="email"
+                        required
+                        autocomplete="email">
+                </label>
+                <label><span>password</span>
+                    <input type="password">
+                </label>
+
+            <label><span>Male</span>
+                <input value="1" type="radio" name="state" required checked>
+            </label>
+            <label><span>Female</span>
+                <input value="0" type="radio" name="state">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Optional data</legend>
+                <label><span>Are you adult?</span>
+                    <input value="true" type="checkbox" name="adult">
+                </label>
+        
+                <!-- <label><span>HTML</span>
+                    <input value="HTML" type="checkbox" name="course">
+                </label>
+                <label><span>CSS</span>
+                    <input value="CSS" type="checkbox" name="course">
+                </label>
+                <label><span>JS</span>
+                    <input value="JS" type="checkbox" name="course">
+                </label> -->
+        
+                <textarea name="" rows="5" placeholder="message"></textarea>
+
+                <select name="town" size="4" multiple>
+                    <optgroup label="East Ukraine">
+                        <option value="69061" selected>Zaporizhzhya</option>
+                        <option value="01001">Kyiv</option>
+                        <option value="49000">Dnipro</option>
+                    </optgroup>
+                    <optgroup label="West Ukraine">
+                        <option value="79007">Lviv</option>
+                        <option value="46001">Ternopil'</option>
+                        <option value="43000">Luts'k</option>
+                    </optgroup>     
+                </select>
+                <label><span>Input your town</span>
+                    <datalist id="town-list">
+                        <option value="Donets'k">
+                        <option value="Kherson">
+                        <option value="Kharkiv">
+                        <option value="Luhansk">
+                        <option value="Mykolaiv">
+                        <option value="Odesa">
+                    </datalist>
+                    <input type="text" placeholder="Town" name="town" list="town-list">
+                </label>
+        </fieldset>
+        
+        <div class="btn-block">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+            <input type="button" value="Click me">
+        </div>
+
+        <!-- <input type="color">
+        <input type="date"> -->
+        <!-- <input type="datetime-local">
+        <input type="month">
+        <input type="week">
+        <input type="time"> -->
+        <!-- <input type="hidden" name="security" value="token">
+        <input type="number" min="100" max="300" step="50">
+        <input type="range" min="100" max="300" step="50">
+        <input type="search">
+        <input type="tel">
+        <input type="url"> -->
+        
+        <!-- <form action="" method="POST" enctype="multipart/form-data">
+            <input type="file">
+        </form> -->
+        <!-- <button type="reset"><img src="./assets/icons/airplane-check.svg" alt="" srcset=""></button> -->
+    </form>
+
+    <!-- PRACTICE 15.09.21  -->
+</body>
+</html>

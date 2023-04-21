@@ -1,0 +1,36 @@
+/* FORMS */
+body {
+    background-color: aquamarine;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 300px;
+    min-height: 50vh;
+    margin: auto;
+}
+
+input:focus {
+    outline-color: blue;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-block {
+    text-align: center;
+}
+
+input:disabled {
+    background-color: antiquewhite;
+}
+
+*::placeholder {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 0.8em;
+}
